@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="w-screen">
+    <section class="bg-slate-500 py-2">
+      <div class="container flex justify-center items-center">
+        <p class="text-lg font-bold text-white underline ">Pague com PIX e ganhe 10% de desconto</p>
+      </div>
+    </section>
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+        <a href="#" class="flex items-center">
+          <img src="assets/logo/tech-squad.png" class="h-16 mr-3" alt="logo" />
+        </a>
+        <div class="flex items-center md:order-2">
+          <a href="#"
+            class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Atendimento</a>
+          <a href="#"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Conta</a>
+          <a href="#"
+            class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Carrinho</a>
+        </div>
+        <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+          <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+            <li>
+              <form class="w-96">
+                <div class="flex">
+                  <div class="relative w-full">
+                    <input type="search" id="search-dropdown"
+                      class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                      placeholder="Search Mockups, Logos, Design Templates..." required>
+                    <button type="submit"
+                      class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                      </svg>
+                      <span class="sr-only">Search</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="bg-slate-300">
+    <nav class="border-gray-200 container">
+      <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+        <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+          <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+            <li class="text-sm text-black"><button id="dropdownBottomButton"
+                data-dropdown-toggle="dropdownBottom" data-dropdown-placement="bottom"
+                class="mr-3 mb-3 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">Todas as categorias<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button></li>
+            <li class="text-sm text-black"><button id="dropdownBottomButton" data-dropdown-toggle="dropdownBottom"
+                data-dropdown-placement="bottom"
+                class="mr-3 mb-3 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">Roupas<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button></li>
+            <li class="text-sm text-black"><button id="dropdownBottomButton"
+                data-dropdown-toggle="dropdownBottom" data-dropdown-placement="bottom"
+                class="mr-3 mb-3 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">Calçados<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button></li>
+            <li class="text-sm text-black"><button id="dropdownBottomButton"
+                data-dropdown-toggle="dropdownBottom" data-dropdown-placement="bottom"
+                class="mr-3 mb-3 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">Acesórios<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button></li>
+            <li class="text-sm text-black"><button id="dropdownBottomButton" data-dropdown-toggle="dropdownBottom"
+                data-dropdown-placement="bottom"
+                class="mr-3 mb-3 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">Marcas<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button></li>
+            <li class="text-sm text-black"><button id="dropdownBottomButton"
+                data-dropdown-toggle="dropdownBottom" data-dropdown-placement="bottom"
+                class="mr-3 mb-3 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">Descontos<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button></li>
+          </ul>
+        </div>
+      </div>
+  </section>
+  <section class="w-screen flex justify-center items-center max-h-screen">
+    <div class="">
+      <img class="object-cover w-screen h-screen" src="/assets/banners/1692301250_principal_02.webp" alt="">
+    </div>
+  </section>
+  <section class="bg-slate-300">
+    <ul class="container grid grid-cols-5 p-5">
+      <li class="text-lg text-black">Frete grátis - Entregamos em todo Brasil</li>
+      <li class="text-lg text-black">Descontos - em pagamentos à vista</li>
+      <li class="text-lg text-black">Envio Super Rápido - Mesmo dia ou até 24h</li>
+      <li class="text-lg text-black">Pague com cartão - Em até 12x Sem Juros</li>
+      <li class="text-lg text-black">Segurança - Loja com SSL de proteção</li>
+    </ul>
+  </section>
+  <section class="">
+    <div class="container grid grid-cols-4 gap-4 p-5 justify-items-center items-center">
+      <img class="object-cover w-screen h-screen" src="/assets/banners/mini02.webp" alt="">
+      <img class="object-cover w-screen h-screen" src="/assets/banners/mini02.webp" alt="">
+      <img class="object-cover w-screen h-screen" src="/assets/banners/mini02.webp" alt="">
+      <img class="object-cover w-screen h-screen" src="/assets/banners/mini02.webp" alt="">
+    </div>
+  </section>
+  <section id="container-produto" class="grid grid-cols-3 justify-items-center"></section>
+  <section class="">
+    <ul class="container grid grid-cols-5 p-5">
+      <li class="text-lg text-black">Marca1</li>
+      <li class="text-lg text-black">Marca1</li>
+      <li class="text-lg text-black">Marca1</li>
+      <li class="text-lg text-black">Marca1</li>
+    </ul>
+  </section>
+  <section class="bg-slate-600">
+    <div class="container">
+      <div class="newsletter flex justify-between align-center">
+        <div class="info flex align-center">
+          <div class="text">
+            <div class="first">Cadastre-se em nossa newsletter</div>
+            <div class="last">e receba novidades e promoções</div>
+          </div>
+        </div>
+        <form class="form" action="/mvc/store/newsletter/" method="post">
+          <div class="flex">
+            <input type="hidden" name="loja" value="799045">
+            <input id="news-name" class="field" name="name" type="text" placeholder="Seu nome" required="">
+            <input type="email" class="field" name="email" placeholder="Seu e-mail" required="" spellcheck="false"
+              autocomplete="off">
+            <button type="submit" class="button news-button" title="Cadastrar" aria-label="Cadastrar">
+              <span>Cadastre-se</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-bg">
+    <div class="container">
+      <div class="footer-column">
+        <div>Logo + info + Sociais</div>
+        <div>info atendimento</div>
+        <div>Meotodos de pagamento</div>
+      </div>
+      <div class="footer-row">
+        <p>Nohall Store. Todas as regras e promoções são válidas somente para produtos do site.</p>
+        <p>Desenvolvido por WDS Developer</p>
+        <p>Tecnologia TrayCorporativo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
