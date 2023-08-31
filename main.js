@@ -66,17 +66,28 @@ const catalogo = [
 ];
 
 for (const produtoCatalogo of catalogo) {
-  const cartaoProduto = `<div class='border-solid border-2 border-sky-500 w-48 m-2' id="card-produto-${produtoCatalogo.id}">
-<img
-  src="./assets/img/${produtoCatalogo.imagem}"
-  alt="Produto 1 do Magazine Hashtag."
-  style="height: 300px"
-/>
-<p class='marca'>${produtoCatalogo.marca}</p>
-<p>${produtoCatalogo.nome}</p>
-<p>$${produtoCatalogo.preco}</p>
-<button>Adicionar</button>
-</div>`;
+  const cartaoProduto = `
+<div id="card-produto-${produtoCatalogo.id}" class="mt-10 w-full bg-white border border-gray-600 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+          <img class="h-60 w-full rounded-t-lg object-cover" src="./assets/img/${produtoCatalogo.imagem}" alt="" />
+      </a>
+      <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">${produtoCatalogo.nome}</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${produtoCatalogo.marca}</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${produtoCatalogo.preco}</p>
+        <a href="#"
+          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Adicionar
+          <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </a>
+      </div>
+    </div>`;
 
   document.getElementById("container-produto").innerHTML += cartaoProduto;
 }
